@@ -1,0 +1,219 @@
+{
+  "Header": {
+    "title": "Nos somos o Geoparque Caiua ",
+    "paragraph": "Nos dedicamos a criar um refugio para as pessoas"
+  },
+"About": {
+    "paragraph": "O Geoparque Caiuá é uma iniciativa no Paraná que visa o reconhecimento como Geoparque Global da UNESCO. O projeto abrange cinco municípios e promove a conservação do patrimônio geológico, histórico e cultural, incentivando o turismo sustentável, a educação ambiental e o desenvolvimento local. Além disso, busca integrar a comunidade e formar parcerias acadêmicas para pesquisas e conscientização.",
+    "Why": [
+      "Preservação ambiental",
+      "Turismo sustentável",
+      "Educação e pesquisa",
+      "Valorização cultural"
+    ],
+    "Why2": [
+      "Exploração responsável",
+      "Experiências únicas",
+      "Conexão com a natureza",
+      "História e geodiversidade"
+    ]
+},
+
+  "Gallery": [
+    {
+      "title": "Teste sendo Realizado",
+      "largeImage": "img/1.jpeg",
+      "smallImage": "img/1.jpeg"
+    },
+    
+    {
+      "title": "Teste sendo Realizado",
+      "largeImage": "/img/2.jpeg",
+      "smallImage": "/img/2.jpeg"
+    },
+    {
+      "title": "Projeto Social",
+      "largeImage": "/img/3.jpeg",
+      "smallImage": "/img/3.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/img/bg.jpeg",
+      "smallImage": "/img/bg.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/img/4.jpg",
+      "smallImage": "/img/4.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "/img/5.jpg",
+      "smallImage": "/img/5.jpg"
+    }
+   
+  ],
+ "Services": [
+    {
+      "icon": "fa-solid fa-hiking",
+      "name": "Trilhas e Ecoturismo",
+      "text": "Oferecemos trilhas guiadas e passeios ecológicos para explorar as paisagens geológicas e biodiversidade do Geoparque Caiuá."
+    },
+    {
+      "icon": "fa-solid fa-graduation-cap",
+      "name": "Educação e Pesquisas",
+      "text": "Promovemos atividades educativas e científicas, incluindo palestras, workshops e pesquisas sobre a geodiversidade da região."
+    },
+    {
+      "icon": "fa-solid fa-landmark",
+      "name": "Turismo Cultural",
+      "text": "Organizamos visitas a sítios históricos e culturais, destacando a importância do patrimônio geológico e arqueológico do Geoparque Caiuá."
+    }
+],
+
+
+
+  "Contact": {
+    "address": "R. Peabirú, 157 - Cruzeiro do Oeste, PR, 87400-000",
+    "phone": "(41) 9999-3333",
+    "email": "contato@parque.com",
+    "facebook": "fb.com",
+    "instagram": "",
+    "youtube": ""
+  },
+ "Features": [
+  
+    {
+      "img": "img/portfolio/03-large.jpg",
+      "title": "Trilha das Rochas",
+      "text": "Explore formações geológicas únicas.",
+      "description": "A Trilha das Rochas é uma jornada pelas paisagens impressionantes do Geoparque Caiuá, passando por formações geológicas milenares e biodiversidade única.",
+      "price": "Gratuito",
+      "gallery": ["img/portfolio/03-large.jpg", "img/portfolio/07-small.jpg", "img/portfolio/02-large.jpg"]
+    },
+    {
+      "img": "img/portfolio/05-small.jpg",
+      "title": "Museu Geológico",
+      "text": "Descubra fósseis e minerais da região.",
+      "description": "O Museu Geológico do Geoparque Caiuá apresenta fósseis, minerais e exposições interativas que contam a história da região e sua formação ao longo de milhões de anos.",
+      "price": "R$ 10,00",
+      "gallery": ["img/portfolio/05-small.jpg", "img/portfolio/08-large.jpg", "img/portfolio/04-small.jpg"]
+    },
+    {
+      "img": "img/portfolio/02-large.jpg",
+      "title": "Passeio Cultural",
+      "text": "Conheça a história e cultura local.",
+      "description": "Uma experiência imersiva nas tradições e costumes das comunidades locais, com visitas a sítios históricos e contato direto com a cultura do Geoparque.",
+      "price": "R$ 30,00",
+      "gallery": ["img/portfolio/02-large.jpg", "img/portfolio/06-small.jpg", "img/portfolio/09-large.jpg"]
+    },
+    {
+      "img": "img/portfolio/07-small.jpg",
+      "title": "Camping na Natureza",
+      "text": "Viva uma aventura ao ar livre.",
+      "description": "O Camping na Natureza oferece uma experiência única para os amantes do ecoturismo, com áreas de acampamento seguras e infraestrutura básica para quem deseja passar a noite sob as estrelas.",
+      "price": "R$ 50,00",
+      "gallery": ["img/portfolio/07-small.jpg", "img/portfolio/01-large.jpg", "img/portfolio/05-large.jpg"]
+    },
+    {
+      "img": "img/portfolio/04-large.jpg",
+      "title": "Escalada em Rocha",
+      "text": "Desafie-se nas formações naturais do Geoparque.",
+      "description": "Com diferentes níveis de dificuldade, a escalada no Geoparque Caiuá é uma oportunidade para aventureiros testarem suas habilidades em um ambiente natural incrível.",
+      "price": "R$ 80,00",
+      "gallery": ["img/portfolio/04-large.jpg", "img/portfolio/09-small.jpg", "img/portfolio/02-small.jpg"]
+    },
+    {
+      "img": "img/portfolio/06-large.jpg",
+      "title": "Observação de Estrelas",
+      "text": "Maravilhe-se com o céu noturno do Geoparque.",
+      "description": "Uma experiência única para os apaixonados por astronomia, com pouca poluição luminosa e um céu incrível para observar planetas, estrelas e constelações.",
+      "price": "Gratuito",
+      "gallery": ["img/portfolio/06-large.jpg", "img/portfolio/03-small.jpg", "img/portfolio/08-large.jpg"]
+    },
+    {
+      "img": "img/portfolio/09-small.jpg",
+      "title": "Programas Educativos",
+      "text": "Aprenda mais sobre a geologia e meio ambiente.",
+      "description": "Oferecemos oficinas, palestras e visitas escolares para ensinar sobre a geodiversidade, paleontologia e a importância da conservação ambiental.",
+      "price": "Sob consulta",
+      "gallery": ["img/portfolio/09-small.jpg", "img/portfolio/01-small.jpg", "img/portfolio/07-large.jpg"]
+    },
+    {
+      "img": "img/portfolio/01-large.jpg",
+      "title": "Feira de Artesanato",
+      "text": "Apoie os artesãos locais e leve lembranças únicas.",
+      "description": "A feira de artesanato do Geoparque Caiuá reúne artistas e produtores locais que vendem peças feitas à mão, inspiradas na natureza e cultura da região.",
+      "price": "Varíavel",
+      "gallery": ["img/portfolio/01-large.jpg", "img/portfolio/04-small.jpg", "img/portfolio/05-small.jpg"]
+    }
+  ] ,
+  
+
+"Testimonials": [
+    
+      {
+          "img": "img/testimonials/01.jpg",
+          "text": "\"Uma experiência incrível! Ver os fósseis de dinossauros tão bem preservados foi fascinante.\"",
+          "name": "Carlos Mendes"
+      },
+      {
+          "img": "img/testimonials/06.jpg",
+          "text": "\"As réplicas em tamanho real e os painéis interativos fazem a visita ser muito educativa. Recomendo para toda a família!\"",
+          "name": "Fernanda Oliveira"
+      },
+      {
+          "img": "img/testimonials/03.jpg",
+          "text": "\"Nunca pensei que aprender sobre a pré-história pudesse ser tão divertido! As crianças adoraram escavar fósseis.\"",
+          "name": "Ricardo Lima"
+      },
+      {
+        "img": "img/testimonials/05.jpg",
+        "text": "\"Os dinossauros animatrônicos são impressionantes! Parece que estamos caminhando por um mundo perdido.\"",
+        "name": "Gustavo Ferreira"
+      },
+      {
+          "img": "img/testimonials/04.jpg",
+          "text": "\"O passeio guiado foi excelente. Os paleontólogos explicaram tudo de maneira envolvente e detalhada.\"",
+          "name": "Mariana Costa"
+      },
+      {
+          "img": "img/testimonials/06.jpg",
+          "text": "\"Adorei a trilha ecológica do parque. Além dos fósseis, a natureza ao redor torna tudo ainda mais especial.\"",
+          "name": "Luana Silveira"
+      }
+  
+  
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Justino Alves",
+      "job": "Gerente Geral",
+      "description": "Nosso Parque e fantastico para toda a familia!.."
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Miguel Sanches",
+      "job": "Guia de Turismo",
+      "description": "Levo as pessoas a lugares incríveis e ensino sobre a história do nosso planeta."
+
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Maria santos",
+      "job": "Atendente",
+      "description": "Guio as pessoas e respondo perguntas sobre o parque"
+
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Larissa Silva",
+      "job": "Gestora",
+      "description": "Administro o parque e cuido da equipe."
+
+    }
+  ]
+
+
+}

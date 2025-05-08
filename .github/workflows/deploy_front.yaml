@@ -1,0 +1,77 @@
+name: Deploy Front
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "frontend/**"
+      - ".github/workflows/deploy_front.yaml"
+
+jobs:
+  deploy-front:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🚚 Obtendo o último código
+      uses: actions/checkout@v4
+
+    - name: setup git config
+      run: |
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<>"
+      
+    - name: 📥 Instalando o PNPM
+      uses: pnpm/action-setup@v3
+      with:
+        version: 8
+        run_install: false
+    
+    - name: ⚙️ Pegando o caminho do cache do PNPM
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm --dir ./frontend store path --silent)" >> $GITHUB_ENV
+
+    - uses: actions/cache@v4
+      name: 📦 Cache do PNPM
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
+    - name: 📥 Instalando dependências
+      run: pnpm --dir ./frontend install
+
+    - name: 🚀 Mudando versão do patch
+      run: cd ./frontend; pnpm version patch
+
+    - name: 🔨 Fazendo o build
+      run: pnpm --dir ./frontend build
+      
+    - name: 🗑️ Limpando arquivos do build antigo
+      uses: StephanThierry/ftp-delete-action@master
+      with:
+        host: ftp.adamrobo.com.br
+        user: ${{ secrets.FTP_FRONT_USER }}
+        password: ${{ secrets.FTP_FRONT_PASSWORD }}
+        remoteDirectories: "/"
+        remoteFiles: "**/*.*"
+        ignoreSSL: "1"
+
+    - name: 📂 Sincronizando arquivos
+      uses: milanmk/actions-file-deployer@master
+      with:
+        remote-protocol: ftp
+        remote-host: ftp.adamrobo.com.br
+        remote-port: 21
+        remote-user: ${{ secrets.FTP_FRONT_USER }}
+        remote-password: ${{ secrets.FTP_FRONT_PASSWORD }}
+        proxy: false
+        local-path: ./frontend/dist/
+        remote-path: /
+        sync: full
+
+    - name: 📤 Enviando commit
+      run:  git add .; git commit -am "Bump patch version"; git push origin main
