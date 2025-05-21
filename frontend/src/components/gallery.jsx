@@ -1,37 +1,36 @@
 import { Image } from "./image";
 import React from "react";
 
-
-export const Gallery = (props) => {
+export const Gallery = ({ data }) => {
   return (
-    <div id="portfolio" className="text-center">
+    <section id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Galeria</h2>
           <p>
-            Um Pouco mais sobre quem somos e oque fazemos... Eventos e atendimentos..
+            Um pouco mais sobre quem somos e o que fazemos... Eventos e atendimentos.
           </p>
         </div>
-        <div className="row">
-          <div className="portfolio-items">
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.title}-${i}`}
-                    className="col-sm-6 col-md-4 col-lg-4"
-                  >
-                    <Image
-                      title={d.title}
-                      largeImage={d.largeImage}
-                      smallImage={d.smallImage}
-                      className="gallery-img"
-                    />
-                  </div>
-                ))
-              : "Loading..."}
-          </div>
+        <div className="row portfolio-items">
+          {data ? (
+            data.map((d, i) => (
+              <div key={`${d.title}-${i}`} className="col-sm-6 col-md-4 col-lg-4">
+                <div className="gallery-card">
+                  <Image
+                    title={d.title}
+                    largeImage={d.largeImage}
+                    smallImage={d.smallImage}
+                    className="gallery-img"
+                  />
+                  <p className="gallery-caption">{d.title}</p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>Carregando imagens...</p>
+          )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
