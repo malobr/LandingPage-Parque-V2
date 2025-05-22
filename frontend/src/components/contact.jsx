@@ -54,7 +54,17 @@ export const Contact = (props) => {
   };
 
   return (
-    <div id="contact">
+<div
+  id="contact"
+  style={{
+    backgroundImage: "url('/img/bg-contato.png')", // coloque o caminho correto da imagem
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    padding: "60px 0",
+    color: "#fff",
+  }}
+>
       <div className="container">
         <div className="row context-content">
           <div className="new-class">
@@ -173,16 +183,13 @@ export const Contact = (props) => {
                 </ul>
               </div>
             </div>
-        <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2025 By{' '}
-            <a href="https://github.com/malobr/LandingPage-Parque" rel="nofollow" target="_blank">
-              ADS TEAM
-            </a>
-          </p>
-        </div>
-      </div>
+        <footer className="bg-dark text-white p-4">
+  <div className="container text-center">
+    <p>&copy; 2025 Geoparque Caiuá. Todos os direitos reservados.</p>
+   
+  </div>
+</footer>
+
           </div>
         </div>
       </div>
