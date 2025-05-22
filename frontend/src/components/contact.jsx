@@ -54,7 +54,17 @@ export const Contact = (props) => {
   };
 
   return (
-    <div id="contact">
+<div
+  id="contact"
+  style={{
+    backgroundImage: "url('/img/bg-contato.png')", // coloque o caminho correto da imagem
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    padding: "60px 0",
+    color: "#fff",
+  }}
+>
       <div className="container">
         <div className="row context-content">
           <div className="new-class">
