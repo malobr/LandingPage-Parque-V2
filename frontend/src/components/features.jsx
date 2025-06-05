@@ -34,7 +34,7 @@ export const Features = ({ data }) => {
     <div id="features" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Catálogo de Produtos</h2>
+          <h2>Atividades do parque</h2>
         </div>
 
         <div className="products-grid">

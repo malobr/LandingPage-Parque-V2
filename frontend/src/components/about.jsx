@@ -1,44 +1,58 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
+export const About = ({ data }) => {
+  if (!data || !data.slides) return <p>Carregando...</p>;
 
-export const About = (props) => {
   return (
-    <div id="about">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 col-md-6">
-            {" "}
-            <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
-          </div>
-          <div className="col-xs-12 col-md-6">
-            <div className="about-text">
-              <h2>Sobre Nos</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>Por que nos visitar?</h3>
-              <div className="list-style">
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why.map((d, i) => (
-                          <li key={`${d}-${i}`}>{d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why2.map((d, i) => (
-                          <li key={`${d}-${i}`}> {d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-              </div>
+    <section id="about" className="container my-16 px-4">
+      <Swiper
+        pagination={{ clickable: true }}
+        spaceBetween={30}
+        slidesPerView={1}
+        modules={[Pagination]}
+      >
+        {data.slides.map((slide, idx) => (
+          <SwiperSlide key={idx}>
+            <div
+              style={{
+                backgroundColor: slide.backgroundColor,
+                padding: "2rem",
+                borderRadius: "8px",
+                minHeight: "710px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="rounded-lg shadow-md mb-6 max-w-full sm:max-w-md"
+              />
+              <h2 className="text-3xl font-bold mb-4 text-red-700 text-center">
+                {slide.title}
+              </h2>
+
+              {slide.paragraph && (
+                <p className="text-center max-w-2xl mx-auto">{slide.paragraph}</p>
+              )}
+
+              {slide.list && (
+                <ul className="list-disc list-inside text-left max-w-xl mx-auto text-sm">
+                  {slide.list.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              )}
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };

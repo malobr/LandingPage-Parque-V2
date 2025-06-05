@@ -1,23 +1,50 @@
+
+
 {
   "Header": {
     "title": "Nos somos o Geoparque Caiua ",
     "paragraph": "Nos dedicamos a criar um refugio para as pessoas"
   },
-"About": {
-    "paragraph": "O Geoparque Caiuá é uma iniciativa no Paraná que visa o reconhecimento como Geoparque Global da UNESCO. O projeto abrange cinco municípios e promove a conservação do patrimônio geológico, histórico e cultural, incentivando o turismo sustentável, a educação ambiental e o desenvolvimento local. Além disso, busca integrar a comunidade e formar parcerias acadêmicas para pesquisas e conscientização.",
-    "Why": [
-      "Preservação ambiental",
-      "Turismo sustentável",
-      "Educação e pesquisa",
-      "Valorização cultural"
-    ],
-    "Why2": [
-      "Exploração responsável",
-      "Experiências únicas",
-      "Conexão com a natureza",
-      "História e geodiversidade"
+  "About": {
+    "slides": [
+      {
+        "title": "Sobre Nós",
+        "paragraph": "O Geoparque Caiuá é uma iniciativa no Paraná que visa o reconhecimento como Geoparque Global da UNESCO. O projeto abrange cinco municípios e promove a conservação do patrimônio geológico, histórico e cultural, incentivando o turismo sustentável, a educação ambiental e o desenvolvimento local. Além disso, busca integrar a comunidade e formar parcerias acadêmicas para pesquisas e conscientização.",
+        "image": "img/about.jpg",
+        "backgroundColor": "#fef3f3"
+      },
+      {
+        "title": "Por que nos visitar? ",
+        "list": [
+          "Preservação ambiental",
+          "Turismo sustentável",
+          "Educação e pesquisa",
+          "Valorização cultural"
+        ],
+        "image": "img/about.jpg",
+        "backgroundColor": "#f0f9ff"
+      },
+      {
+        "title": "Por que nos visitar?",
+        "list": [
+          "Exploração responsável",
+          "Experiências únicas",
+          "Conexão com a natureza",
+          "História e geodiversidade"
+        ],
+        "image": "img/about.jpg",
+        "backgroundColor": "#fef7e6"
+      },
+      {
+        "title": "Nosso Compromisso",
+        "paragraph": "Nós valorizamos cada visitante e buscamos oferecer uma experiência única. Nosso time está sempre pronto para te receber com qualidade e atenção.",
+        "image": "img/about.jpg",
+        "backgroundColor": "#e6f4ea"
+      }
     ]
-},
+  },
+
+
 
   "Gallery": [
     {
@@ -25,7 +52,6 @@
       "largeImage": "img/1.jpeg",
       "smallImage": "img/1.jpeg"
     },
-    
     {
       "title": "Teste sendo Realizado",
       "largeImage": "/img/2.jpeg",
@@ -51,27 +77,25 @@
       "largeImage": "/img/5.jpg",
       "smallImage": "/img/5.jpg"
     }
-   
   ],
- "Services": [
-    {
-      "icon": "fa-solid fa-hiking",
-      "name": "Trilhas e Ecoturismo",
-      "text": "Oferecemos trilhas guiadas e passeios ecológicos para explorar as paisagens geológicas e biodiversidade do Geoparque Caiuá."
-    },
-    {
-      "icon": "fa-solid fa-graduation-cap",
-      "name": "Educação e Pesquisas",
-      "text": "Promovemos atividades educativas e científicas, incluindo palestras, workshops e pesquisas sobre a geodiversidade da região."
-    },
-    {
-      "icon": "fa-solid fa-landmark",
-      "name": "Turismo Cultural",
-      "text": "Organizamos visitas a sítios históricos e culturais, destacando a importância do patrimônio geológico e arqueológico do Geoparque Caiuá."
-    }
+
+  "Services": [
+  {
+    "name": "Cânion Fortaleza",
+    "text": "Um dos maiores cânions do Brasil localizado no RS.",
+    "image": "/img/5.jpg"
+  },
+  {
+    "name": "Vale da Lua",
+    "text": "Formações rochosas únicas esculpidas pela água no cerrado goiano.",
+    "image": "/img/5.jpg"
+  },
+  {
+    "name": "Cânion Fortaleza",
+    "text": "Um dos maiores cânions do Brasil localizado no RS.",
+    "image": "/img/5.jpg"
+  }
 ],
-
-
 
   "Contact": {
     "address": "R. Peabirú, 157 - Cruzeiro do Oeste, PR, 87400-000",
@@ -81,8 +105,8 @@
     "instagram": "",
     "youtube": ""
   },
- "Features": [
-  
+
+  "Features": [
     {
       "img": "img/portfolio/03-large.jpg",
       "title": "Trilha das Rochas",
@@ -147,73 +171,33 @@
       "price": "Varíavel",
       "gallery": ["img/portfolio/01-large.jpg", "img/portfolio/04-small.jpg", "img/portfolio/05-small.jpg"]
     }
-  ] ,
-  
-
-"Testimonials": [
-    
-      {
-          "img": "img/testimonials/01.jpg",
-          "text": "\"Uma experiência incrível! Ver os fósseis de dinossauros tão bem preservados foi fascinante.\"",
-          "name": "Carlos Mendes"
-      },
-      {
-          "img": "img/testimonials/06.jpg",
-          "text": "\"As réplicas em tamanho real e os painéis interativos fazem a visita ser muito educativa. Recomendo para toda a família!\"",
-          "name": "Fernanda Oliveira"
-      },
-      {
-          "img": "img/testimonials/03.jpg",
-          "text": "\"Nunca pensei que aprender sobre a pré-história pudesse ser tão divertido! As crianças adoraram escavar fósseis.\"",
-          "name": "Ricardo Lima"
-      },
-      {
-        "img": "img/testimonials/05.jpg",
-        "text": "\"Os dinossauros animatrônicos são impressionantes! Parece que estamos caminhando por um mundo perdido.\"",
-        "name": "Gustavo Ferreira"
-      },
-      {
-          "img": "img/testimonials/04.jpg",
-          "text": "\"O passeio guiado foi excelente. Os paleontólogos explicaram tudo de maneira envolvente e detalhada.\"",
-          "name": "Mariana Costa"
-      },
-      {
-          "img": "img/testimonials/06.jpg",
-          "text": "\"Adorei a trilha ecológica do parque. Além dos fósseis, a natureza ao redor torna tudo ainda mais especial.\"",
-          "name": "Luana Silveira"
-      }
-  
-  
   ],
-  "Team": [
+
+  "Testimonials": [
     {
-      "img": "img/team/01.jpg",
-      "name": "Justino Alves",
-      "job": "Gerente Geral",
-      "description": "Nosso Parque e fantastico para toda a familia!.."
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Uma experiência incrível! Ver os fósseis de dinossauros tão bem preservados foi fascinante.\"",
+      "name": "Carlos Mendes"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Miguel Sanches",
-      "job": "Guia de Turismo",
-      "description": "Levo as pessoas a lugares incríveis e ensino sobre a história do nosso planeta."
-
+      "img": "img/testimonials/06.jpg",
+      "text": "\"As réplicas em tamanho real e os painéis interativos fazem a visita ser muito educativa. Recomendo para toda a família!\"",
+      "name": "Fernanda Oliveira"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Maria santos",
-      "job": "Atendente",
-      "description": "Guio as pessoas e respondo perguntas sobre o parque"
-
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Nunca pensei que aprender sobre a pré-história pudesse ser tão divertido! As crianças adoraram escavar fósseis.\"",
+      "name": "Ricardo Lima"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Larissa Silva",
-      "job": "Gestora",
-      "description": "Administro o parque e cuido da equipe."
-
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Os dinossauros animatrônicos são impressionantes! Parece que estamos caminhando por um mundo perdido.\"",
+      "name": "Gustavo Ferreira"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"O passeio guiado foi excelente, com muitas informações interessantes sobre os períodos jurássico e cretáceo.\"",
+      "name": "Mariana Souza"
     }
   ]
-
-
 }

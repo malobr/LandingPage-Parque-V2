@@ -5,26 +5,27 @@ export const Services = ({ data }) => {
     <section id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Nossos Serviços</h2>
-          <p>Conheça as soluções que oferecemos para transformar seu negócio.</p>
+          <h2>Geossítios</h2>
+          <p>Outros Geossítios para você visitar e aprender a história e geografia local!</p>
         </div>
-        <div className="row">
-          {data ? (
-            data.map((d, i) => (
-              <div key={`${d.name}-${i}`} className="col-md-4">
-                <div className="service-box">
-                  <i className={`fa ${d.icon}`} aria-hidden="true"></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
+
+        {data && data.length > 0 ? (
+          <div className="services-grid">
+            {data.map((d, i) => (
+              <div key={`${d.name}-${i}`} className="service-box">
+                {d.image && (
+                  <div className="service-image-wrapper">
+                    <img src={d.image} alt={d.name} className="service-image" />
                   </div>
-                </div>
+                )}
+                <h3>{d.name}</h3>
+                <p>{d.text}</p>
               </div>
-            ))
-          ) : (
-            <p>Carregando serviços...</p>
-          )}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <p className="loading-text">Carregando serviços...</p>
+        )}
       </div>
     </section>
   );
