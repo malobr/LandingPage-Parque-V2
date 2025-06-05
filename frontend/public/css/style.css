@@ -841,7 +841,7 @@ header .intro-text {
 
 /* Texto preto */
 #services p {
-  color: #333; /* preto suave */
+  color: #333; 
   font-size: 1rem;
   line-height: 1.5;
   max-width: 90%;
