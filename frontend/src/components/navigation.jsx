@@ -71,12 +71,11 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#features" className="page-scroll">
-                Produtos
-              </a>
+                Atividades              </a>
             </li>
             <li>
               <a href="#services" className="page-scroll">
-                Serviços
+                Geossítios
               </a>
             </li>
             <li>
@@ -89,11 +88,7 @@ export const Navigation = (props) => {
                 Testemunhos
               </a>
             </li>
-            <li>
-              <a href="#Team" className="page-scroll">
-                Equipe
-              </a>
-            </li>
+            
             <li>
               <a href="#contact" className="page-scroll">
                 Contato

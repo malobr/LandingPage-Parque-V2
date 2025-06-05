@@ -701,87 +701,163 @@ header .intro-text {
 
 
 /* About Section */
-#about {
-  padding: 100px 0;
-}
-#about h3 {
-  font-size: 22px;
-  margin: 0 0 20px;
-}
 #about h2 {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-bottom: 15px;
-}
-#about h2::after {
-  position: absolute;
-  content: "";
-  background: linear-gradient(to right, #69282c 0%, #ff0000 100%);
-  height: 4px;
-  width: 200px;
-  bottom: 0;
-  left: 0;
-}
-#about .about-text li {
-  margin-bottom: 6px;
-  margin-left: 6px;
-  list-style: none;
-  padding: 0;
-}
-#about .about-text li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  color: #ff0000;
-  font-size: 11px;
-  font-weight: 300;
-  padding-right: 8px;
-}
-#about img {
-  width: 520px;
-  margin-top: 10px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
-}
-#about p {
-  line-height: 24px;
-  margin: 30px 0;
-}
-/* Services Section */
-#services {
-  padding: 100px 0;
-  background: linear-gradient(to right, #b6282f 0%, #ff0000 100%);
-  color: #fff;
-}
-#services .service-desc {
-  margin: 10px 10px 20px;
-}
-#services h2 {
-  color: #fff;
-  text-shadow: rgb(255, 255, 255) 0 0 5px;
+  font-size: 1.875rem; /* Tailwind: text-3xl */
 }
 
-#services i.fa {
-  font-size: 42px;
+#about h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
   width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #5c5555 0%, #000000 100%);
-  border-radius: 50%;
-  color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #9b1c1c, #ff0000);
+  border-radius: 2px;
 }
+
+#about .about-text li {
+  margin-bottom: 6px;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+#about .about-text li::before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #e3342f;
+  font-size: 0.75rem;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+#about img {
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Container e seção */
+#services {
+  padding: 100px 20px;
+  background: linear-gradient(90deg, #64646418 0%, #8b8b8b2f 100%);
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  min-height: 700px;
+}
+
+/* Container centralizado */
+#services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título da seção */
+#services .section-title h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #000;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+#services .section-title p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 1.5;
+}
+
+/* Grid responsivo */
+#services .services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 0 10px;
+}
+
+@media (min-width: 640px) {
+  #services .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  #services .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Cards dos serviços */
+#services .service-box {
+  background: #fff;
+  color: #000;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#services .service-box:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagem no topo */
+#services .service-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+#services .service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+#services .service-box:hover .service-image {
+  transform: scale(1.05);
+}
+
+/* Título vermelho */
 #services h3 {
-  font-weight: 500;
-  padding: 5px 0;
-  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #b30000; /* vermelho escuro */
+  margin: 20px 0 12px;
 }
+
+/* Texto preto */
 #services p {
-  color: rgba(255, 255, 255, 0.75);
+  color: #333; /* preto suave */
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 0 auto;
 }
-#services .service-desc {
-  margin-bottom: 40px;
+
+/* Texto de carregamento */
+#services .loading-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 50px;
 }
+
+
+
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
@@ -1301,5 +1377,23 @@ section.parallax-section {
   border-radius: 50%;
   border: 3px solid #ff9c08;
   margin-bottom: 15px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #b6282f;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 600;
 }
 
