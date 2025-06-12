@@ -295,6 +295,10 @@ html, body {
 
 
 
+.img-menor {
+  width: 300px; /* ou qualquer valor */
+  height: auto; /* mantém a proporção */
+}
 
 
 /* Header Section */
@@ -307,7 +311,7 @@ html, body {
   height: 100vh; /* Altura da viewport inteira */
   padding: 0;
   margin: 0;
-  background: url(../img/bg.jpeg) center center no-repeat;
+  background: url(../img/bg2.jpg) center center no-repeat;
   background-color: #e5e5e5;
   background-size: cover; /* Garantir que cobre toda a área */
   background-attachment: fixed; /* Efeito parallax simples (opcional) */
@@ -377,7 +381,7 @@ html, body {
     height: 100px;
     padding: 0;
     margin: 0;
-    background: url(../img/bg.jpg) center center no-repeat;
+    background: url(../img/bg2.jpg) center center no-repeat;
     background-color: #af1616;
     background-size: cover;
     position: relative;
@@ -700,55 +704,72 @@ header .intro-text {
 
 
 
-/* About Section */
 #about h2 {
   position: relative;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
+  margin-bottom: 1.25rem; /* 20px */
+  padding-bottom: 0.9375rem; /* 15px */
   font-size: 1.875rem; /* Tailwind: text-3xl */
+  font-weight: 700;
+  color: #9b1c1c;
+  text-align: center;
 }
 
 #about h2::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
+  transform: translateX(-50%);
   height: 4px;
   width: 120px;
   background: linear-gradient(to right, #9b1c1c, #ff0000);
   border-radius: 2px;
 }
 
-#about .about-text li {
-  margin-bottom: 6px;
+#about ul li {
+  margin-bottom: 0.375rem; /* 6px */
   padding-left: 1.25rem;
   position: relative;
+  font-size: 0.875rem; /* text-sm */
+  color: #333;
 }
 
-#about .about-text li::before {
+#about ul li::before {
   content: "\f00c";
   font-family: "FontAwesome";
   color: #e3342f;
   font-size: 0.75rem;
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #about img {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
+
 
 /* Container e seção */
 #services {
   padding: 100px 20px;
-  background: linear-gradient(90deg, #64646418 0%, #8b8b8b2f 100%);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url('/img/CAPA-GEOPARQUE.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   min-height: 700px;
 }
+
 
 /* Container centralizado */
 #services .container {
