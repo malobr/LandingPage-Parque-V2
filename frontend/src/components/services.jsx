@@ -18,7 +18,15 @@ export const Services = ({ data }) => {
                     <img src={d.image} alt={d.name} className="service-image" />
                   </div>
                 )}
-                <h3>{d.name}</h3>
+                <h3>
+                  {d.link ? (
+                    <a href={d.link} target="_blank" rel="noopener noreferrer">
+                      {d.name}
+                    </a>
+                  ) : (
+                    d.name
+                  )}
+                </h3>
                 <p>{d.text}</p>
               </div>
             ))}
